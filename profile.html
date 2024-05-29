@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Profile|GameMania</title>
+  <style>
+  #bg {
+    background-image: url("images/red_and_blue_abstract_gaming_background_by_snehilpandey_dfo84f1-fullview.jpg");
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(2px);
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    color: #4A4A4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  form {
+    width: 350px;
+    position: relative;
+    filter: drop-shadow(1px 1px 50px rgb(179, 3, 3));
+  }
+  form .form-field::before {
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    color: #888888;
+    content: " ";
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  form .form-field:nth-child(1)::before {
+    background-image: url(img/user-icon.png);
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    
+  }
+  form .form-field:nth-child(2)::before {
+    background-image: url(img/lock-icon.png);
+    width: 16px;
+    height: 16px;
+    
+  }
+  form .form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+    
+  }
+  form input {
+    font-family: inherit;
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    padding: 0.9rem 0.7rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 17px;
+    color: #4A4A4A;
+    text-indent: 40px;
+    
+    
+  }
+  form .btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.9rem 2.5rem;
+    text-align: center;
+    background-color: rgb(248, 20, 20);
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 17px;
+    
+  } 
+  header {
+			background-color:rgb(19, 19, 19);
+			
+			padding: 12px;
+			text-align: left;
+			display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items:center;
+             
+			
+		}
+    .red-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 5px rgb(255, 0, 0));
+  
+  
+}
+</style>
+
+
+</head>
+
+
+<body>
+  
+<!-- partial:index.partial.html -->
+
+<div id="bg"></div>
+
+<form>
+  <fieldset style="padding: 10%; background-color: rgb(19, 19, 19);  border-radius: 20px; ">
+    
+    <img src="images/logo.png" alt="Logo" style="height:200px; width:auto; margin-left: 20px; margin-right:5px ;border-radius: 20px;">
+    <h2 style="color: rgb(21, 137, 221); font-size: 20px; filter: drop-shadow(1px 1px 2px rgb(21, 137, 221));">Enter Your Informations:</h2>
+    <div class="form-field">
+      <input type="email" placeholder="Email / Username" required/>
+    </div>
+
+    <div class="form-field">
+      <input type="password" placeholder="Password" required/>
+    </div>
+
+    <div class="form-field">
+      <button id="example-button" : class="red-button">Log In</button>
+    </div>
+    <a style="color: #fff  ; font-size: 15px; margin-right: 15px ;"  > Join Our Community By :</a><a href="sign.html" style="color: #eb0505;">Sign up</a>
+  </fieldset>
+</form>
+<script>
+  const button = document.getElementById("example-button");
+  button.addEventListener("click", function() {
+    location.href = "home.html";
+  });
+</script>
+<!-- partial -->
+  
+</body>
+</html>

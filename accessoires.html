@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessoires|GameMania</title>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="sstyle.css">
+</head>
+<header>
+  <a href="home.html">
+    <img src="images/logo.png" alt="Logo" style="height:60px; margin-right:200px;">
+    </a>
+        
+      <a style="display: inline; margin-right: 40px; color: azure;  " href="home.html"  >Home</a>
+      <a style="display: inline; margin-right: 40px; color: azure;" href="cd games.html">cd games</a>
+      <a style="display: inline; margin-right: 40px; color: azure;" href="virtual games.html">virtual Games</a>
+      <a style="display: inline; margin-right: 40px; color: azure;" href="accessoires.html">accessoires</a>
+      <a style="display: inline; margin-right: 210px;color: azure;" href="contact.html">Contact</a>
+      <a href="signin.html">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACc0lEQVR4nO2Zv2sUURDHJxDvZvasFQRvZ04UOUFBQbGKhRILRf8JQYjYCCJYKEJAgmhhYRXQRkGsBBtFE8HORhBFLBQsksKIv+IPFPnKJlfljtu3u7feRPYLA9u8953Pm31vd2eJKlWqlEsqOGKCWRMsmgBDjkUTzJjgcCYIE1x0kDx6hQoms1QCriPCoZBqzLpIVvrGo5CKfHWQKFJury8hFcFqCKpAJHi1fqjgZiw4uqmBbW3C2vWERnJtgvMm+LYaKjKzUbCh7x6MMK6Meyr47RXkZUxgClSzhrYJ3rgDievYRxkVM/a6AlHBO8opFTxxA2KCG3lBTDDlBkQFl/KCqOCkGxATXPg/QBjXCoBMugFRxt28ICa47QbEGHP5MDBijHk/IAK0GliXFSOuYWtePyoDRBl3KId2EdYo47kbEGNcyQPS8bvlB0TwuADIC08g0AjHsiFgJBYcd7VHrBPNOiwUoxlhZxEvKhPEBCdCQYxxyi2ICl63CbU0jzHCqAleuQWx5ZgKqMbZoj70D0C+p3kk7Rz3ICr4mQrCeO8exBgLqR6MOfcgyngaAPLMNwjjgwl2p3kkjYqirVkqCeRP8uKY1tNaAaPJd0wyduggyvikjKtWwxbKqVYNm5Vx2RgfhwHy1gQTSSuUBqRkLhNMdOYuFyQ5WluMM8mTmUrSGGFUGacTr3JAGPMaYUdZAF15NLC932dw+gSMhR6V+BVyGg1aKtjTs9kd8KxKBj/oATJNQ5IJrvfI537qwDjCwa4VqGM/DUlWx4EukAjjYYOXf8jAYyjjXKaVWPohI3g4iDfVwskLPi/lElqJSpUq0Ur9BdNUyS04KAcKAAAAAElFTkSuQmCC" style="height: 25px; margin-right: 20px;  filter: drop-shadow(1px 1px 5px rgb(47, 18, 155));" >
+      </a>
+      <a href="panier.html" >
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACqklEQVR4nO2YvYsTURTF76pkzp0Qh8FSBLERQVFBXbSw0koLsVgQLLTyL7BSFhHRLKJsIdisdgrKimIj+AHbKaiNpSAifiERbcQVFnNkskP2JiZD5mUmHzA/eBBmcs8977438948kYKCgoKRgKoXqbpEVcbtF4HnBKYoMiGjDiPDK+bbW1XGcATY0oB9Mk5QpEJg3nRiTsYNqk6aDtS6/OcmVf8mTL/+G/CDwD163sZ0HRDxW4RE/Jb7YRjkalz/68h3AnvTjkLNiEwOZQS0pROvUr0VqXrLCJySIcByeSuBmtMLhcBpE3g9V6cJUPWO8THVe6DnHTCBL2RIEHhpfOzvPbBSWWem0G+KrM7VaQcosoaqi7GHOoMglDQQ+NjsRKm0RQYMy+Vtpojv0wsAD83wHcvFZQIEjpv899MLqJ43FZiRAUPVyyb/OReBo0bgcS4uE6DqE5P/SHoBz9tkV0MZMAS+NfOn3U40BEQmGvuRlSqsz8VpB6Jcpng/nb9NqLrQFPL9w04iLnl9/5Ap3IK7EDBrKnE2U5cJEDhj8s6KK/S8E0Zo3lkobV7Vu2b+n3QX8v3tZijfZeoyAaq+NVN3p7hCkRJV/zSX8zAMnMV6z1k2W/UliqA/QeC1Gc6DmTntQrRpM9P2jfQLVa+YafQs740dgQemA9f6FyyVNredXDyl6u5ot5iJ4xgCG6h62+Sp0/d3SBYQmM7w8/ArVXc1tVUvxNfqbf9zf312WZWnzQPdbyeuxrprO9yvR1+BuUzVeH90g6ofEg/EehwBLhfmUXxvMf69R8YNBkFIkVXD9jFecHmRmyHwhcDn6DA4upZXXOY0EjucaNMxLnMaFezwgOYVlznx8Lcb+ZRXXOZ0mQqX8orLnPhhrDYqmv4hrqaNKygoKJCR4R+x7jjE9tvvCQAAAABJRU5ErkJggg==" style="height: 25px; filter: drop-shadow(1px 1px 5px rgb(250, 3, 3));">
+      </a>
+</header>
+<body>
+  <div  id="bg"></div>
+  <section id="trending">
+    <div class="container">
+      <h3 class="text-center section-subheading">-- gaming accessoires --</h3>
+      <h1 style="color: aliceblue; font-size: 220% ;  " class="text-center section-heading" > Gaming Console : </h1>
+    </div>
+    <div class="container">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="access/black4.png" alt="valo">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="game-price">Price: €21,99</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="game name">
+               black ps4 console
+              </h2>
+              <h3 class="game-rating">
+                <span>4.0</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+              <button class="btn" id="add-to-cart-btn" >
+                Add To Cart
+               </button>
+            </div>
+              </div>
+            </div>
+        
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="access/red4.png" alt="valo">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="game-price">Price: €25,99</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="game name">
+                    red ps4 console
+                  </h2>
+                  <h3 class="game-rating">
+                    <span>4.3</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                  <button class="btn" id="add-to-cart-btn" >
+                    Add To Cart
+                   </button>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="access/blue4.png" alt="valo">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="game-price">Price: €25,99</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="game name">
+                      blue ps4 console
+                    </h2>
+                    <h3 class="game-rating">
+                      <span>4.2</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                    <button class="btn" id="add-to-cart-btn" >
+                        Add To Cart
+                       </button>
+                  </div>
+                </div>
+              </div>
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="access/silver4.png" alt="valo">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="game-price">Price: €29,99</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="game name">
+                        silver ps4 console
+                      </h2>
+                      <h3 class="game-rating">
+                        <span>3,9</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                      <button class="btn" id="add-to-cart-btn" >
+                        Add To Cart
+                       </button>
+                    </div>
+                  </div>
+                </div>
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="access/ps5.png" alt="valo">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="game-price">Price: €39,99</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="game name">
+                          standard ps5 console
+                        </h2>
+                        <h3 class="game-rating">
+                          <span>4.1</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                        <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="access/red5.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €59,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            red ps5 console
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="access/blue55.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €59,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            blue ps5 console
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                            
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                        
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="access/silver5.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €59,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            silver ps5 console
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="access/360.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €59,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            xbox 360 console 
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="access/one.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €59,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            xbox one console
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div>
+      </div>
+      <!-- add pagination-->
+      <div class="tranding-slider-control">
+        <div class="swiper-button-prev slider-arrow">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </div>
+        <div class="swiper-button-next slider-arrow">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section id="trending">
+    <div class="container">
+      
+      <h1 style="color: aliceblue;font-size: 220% ;" class="text-center section-heading"> Gaming Headphones: </h1>
+    </div>
+    <div class="container">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/pulse 3d.png" alt="valo">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="game-price">Price: €41,99</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="game name">
+                Pulse 3d wireless headset
+              </h2>
+              <h3 class="game-rating">
+                <span>4.0</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+              <button class="btn" id="add-to-cart-btn" >
+                Add To Cart
+               </button>
+            </div>
+              </div>
+            </div>
+        
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/sony.png" alt="valo">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="game-price">Price: €29,99</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="game name">
+                    sony headset
+                  </h2>
+                  <h3 class="game-rating">
+                    <span>4.3</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                  <button class="btn" id="add-to-cart-btn" >
+                    Add To Cart
+                   </button>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="images/logitech.png" alt="valo">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="game-price">Price: €25,99</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="game name">
+                      logitech gaming headset
+                    </h2>
+                    <h3 class="game-rating">
+                      <span>4.2</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                    <button class="btn" id="add-to-cart-btn" >
+                        Add To Cart
+                       </button>
+                  </div>
+                </div>
+              </div>
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="images/razor.png" alt="valo">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="game-price">Price: €31,99</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="game name">
+                        razor headset
+                      </h2>
+                      <h3 class="game-rating">
+                        <span>3,9</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                      <button class="btn" id="add-to-cart-btn" >
+                        Add To Cart
+                       </button>
+                    </div>
+                  </div>
+                </div>
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="images/genesis.png" alt="valo">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="game-price">Price: €39,99</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="game name">
+                          genesis headset
+                        </h2>
+                        <h3 class="game-rating">
+                          <span>4.1</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                        <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/sony h.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €59,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                           sony gaming headphones
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/samsung.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €59,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            samsung headphones
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/sony micro.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €59,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            sony C-80 microphone
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/logitech micro.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €59,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            logitech microphone
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/razor micro.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €59,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            razor microphone
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div>
+      </div>
+      <!-- add pagination-->
+      <div class="tranding-slider-control">
+        <div class="swiper-button-prev slider-arrow">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </div>
+        <div class="swiper-button-next slider-arrow">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      </div>
+    </div>
+  </section><section id="trending">
+    <div class="container">
+      
+      <h1 style="color: aliceblue;font-size: 220% ;" class="text-center section-heading"> Gift Cards : </h1>
+    </div>
+    <div class="container">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/20€.png" alt="valo">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="game-price">Price: €20,99</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="game name">
+                20€ psn Card
+              </h2>
+              <h3 class="game-rating">
+                <span>4.0</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+              <button class="btn" id="add-to-cart-btn" >
+                Add To Cart
+               </button>
+            </div>
+              </div>
+            </div>
+        
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/10€.png" alt="valo">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="game-price">Price: €10,99</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="game name">
+                    10€ psn Card
+                  </h2>
+                  <h3 class="game-rating">
+                    <span>4.3</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                  <button class="btn" id="add-to-cart-btn" >
+                    Add To Cart
+                   </button>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="images/50€.png" alt="valo">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="game-price">Price: €50,99</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="game name">
+                      50€ psn Card
+                    </h2>
+                    <h3 class="game-rating">
+                      <span>4.2</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                    <button class="btn" id="add-to-cart-btn" >
+                        Add To Cart
+                       </button>
+                  </div>
+                </div>
+              </div>
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="images/10x.png" alt="valo">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="game-price">Price: €10,99</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="game name">
+                        10€ xbox gamepass
+                      </h2>
+                      <h3 class="game-rating">
+                        <span>3,9</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                      <button class="btn" id="add-to-cart-btn" >
+                        Add To Cart
+                       </button>
+                    </div>
+                  </div>
+                </div>
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="images/20x.png" alt="valo">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="game-price">Price: €20,99</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="game name">
+                         20€ xbox gamepass
+                        </h2>
+                        <h3 class="game-rating">
+                          <span>4.1</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                        <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/50x.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €50,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            50€ xbox gamepass
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/2800.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €20,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            2800 V-bucks
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/5000.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €30,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            5000 V-bucks
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/25nin.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €55,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            25€ nintendo Gift Card
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/1000.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €9,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            1000 v-buck
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div>
+      </div>
+      <!-- add pagination-->
+      <div class="tranding-slider-control">
+        <div class="swiper-button-prev slider-arrow">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </div>
+        <div class="swiper-button-next slider-arrow">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      </div>
+    </div>
+  </section><section id="trending">
+    <div class="container">
+      
+      <h1 style="color: aliceblue;font-size: 220% ;" class="text-center section-heading">  Gaming Consoles : </h1>
+    </div>
+    <div class="container">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/pss5.png" alt="valo">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="game-price">Price: €350,99</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="game name">
+                playstation 5
+              </h2>
+              <h3 class="game-rating">
+                <span>4.0</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+              <button class="btn" id="add-to-cart-btn" >
+                Add To Cart
+               </button>
+            </div>
+              </div>
+            </div>
+        
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/pss4.png" alt="valo">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="game-price">Price: €209,99</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="game name">
+                    playstation 4
+                  </h2>
+                  <h3 class="game-rating">
+                    <span>4.3</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                  <button class="btn" id="add-to-cart-btn" >
+                    Add To Cart
+                   </button>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="images/ps3.png" alt="valo">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="game-price">Price: €105,99</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="game name">
+                      playstation 3
+                    </h2>
+                    <h3 class="game-rating">
+                      <span>4.2</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                    <button class="btn" id="add-to-cart-btn" >
+                        Add To Cart
+                       </button>
+                  </div>
+                </div>
+              </div>
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="images/one x.png" alt="valo">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="game-price">Price: €299,99</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="game name">
+                        xbox one x
+                      </h2>
+                      <h3 class="game-rating">
+                        <span>3,9</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                      <button class="btn" id="add-to-cart-btn" >
+                        Add To Cart
+                       </button>
+                    </div>
+                  </div>
+                </div>
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="images/one s.png" alt="valo">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="game-price">Price: €239,99</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="game name">
+                          xbox one S
+                        </h2>
+                        <h3 class="game-rating">
+                          <span>4.1</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                        <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/one 2tb.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €159,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            xbox one
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/xbox360.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €79,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            xbox 360
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/kinect.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €49,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            xbox kinect
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/switch.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €259,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            nintendo switch
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div> <div class="swiper-slide tranding-slide">
+                      <div class="tranding-slide-img">
+                        <img  src="images/3ds.png" alt="valo">
+                      </div>
+                      <div class="tranding-slide-content">
+                        <h1 class="game-price">Price: €159,99</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="game name">
+                            nintendo 3ds
+                          </h2>
+                          <h3 class="game-rating">
+                            <span>4.4</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                          </h3>
+                          <button class="btn" id="add-to-cart-btn" >
+                            Add To Cart
+                           </button>
+                        </div>
+                      </div>
+                    </div>
+      </div>
+      <!-- add pagination-->
+      <div class="tranding-slider-control">
+        <div class="swiper-button-prev slider-arrow">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </div>
+        <div class="swiper-button-next slider-arrow">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js">  </script>
+</body>
+<footer>
+  <p>&copy; 2024 Game Mania</p>
+
+</footer>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Panier|Game Mania</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+           display: flex;
+           flex-direction: column;
+		}
+		header {
+			background-color:rgb(19, 19, 19);
+			
+			padding: 12px;
+			text-align: left;
+			display: flex;
+            
+            justify-content: left;
+            align-items:center;
+             
+			
+		}	
+		footer {
+			margin-top: auto;
+          background-color: rgb(0, 0, 0);
+           color: #ccc;
+          padding: 10px;
+           text-align: center;
+		}
+		
+	</style>
+	
+	
+</head>
+<body>
+	<header>
+           <a href="home.html">
+		<img src="images/logo.png" alt="Logo" style="height:60px; margin-right:250px;">
+           </a>
+			
+			<a style="display: inline; margin-right: 40px;  " href="home.html"  >Home</a>
+			<a style="display: inline; margin-right: 40px;" href="cd games.html">cd games</a>
+			<a style="display: inline; margin-right: 40px;" href="virtual games.html">virtual Games</a>
+			<a style="display: inline; margin-right: 40px;" href="accessoires.html">accessoires</a>
+			<a style="display: inline; margin-right: 450px;" href="contact.html">Contact</a>
+			<a href="signin.html">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACc0lEQVR4nO2Zv2sUURDHJxDvZvasFQRvZ04UOUFBQbGKhRILRf8JQYjYCCJYKEJAgmhhYRXQRkGsBBtFE8HORhBFLBQsksKIv+IPFPnKJlfljtu3u7feRPYLA9u8953Pm31vd2eJKlWqlEsqOGKCWRMsmgBDjkUTzJjgcCYIE1x0kDx6hQoms1QCriPCoZBqzLpIVvrGo5CKfHWQKFJury8hFcFqCKpAJHi1fqjgZiw4uqmBbW3C2vWERnJtgvMm+LYaKjKzUbCh7x6MMK6Meyr47RXkZUxgClSzhrYJ3rgDievYRxkVM/a6AlHBO8opFTxxA2KCG3lBTDDlBkQFl/KCqOCkGxATXPg/QBjXCoBMugFRxt28ICa47QbEGHP5MDBijHk/IAK0GliXFSOuYWtePyoDRBl3KId2EdYo47kbEGNcyQPS8bvlB0TwuADIC08g0AjHsiFgJBYcd7VHrBPNOiwUoxlhZxEvKhPEBCdCQYxxyi2ICl63CbU0jzHCqAleuQWx5ZgKqMbZoj70D0C+p3kk7Rz3ICr4mQrCeO8exBgLqR6MOfcgyngaAPLMNwjjgwl2p3kkjYqirVkqCeRP8uKY1tNaAaPJd0wyduggyvikjKtWwxbKqVYNm5Vx2RgfhwHy1gQTSSuUBqRkLhNMdOYuFyQ5WluMM8mTmUrSGGFUGacTr3JAGPMaYUdZAF15NLC932dw+gSMhR6V+BVyGg1aKtjTs9kd8KxKBj/oATJNQ5IJrvfI537qwDjCwa4VqGM/DUlWx4EukAjjYYOXf8jAYyjjXKaVWPohI3g4iDfVwskLPi/lElqJSpUq0Ur9BdNUyS04KAcKAAAAAElFTkSuQmCC" style="height: 37px; margin-right: 30px;  filter: drop-shadow(1px 1px 5px rgb(47, 18, 155)); ;" >
+			</a>
+			<a href="panier.html" >
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACqklEQVR4nO2YvYsTURTF76pkzp0Qh8FSBLERQVFBXbSw0koLsVgQLLTyL7BSFhHRLKJsIdisdgrKimIj+AHbKaiNpSAifiERbcQVFnNkskP2JiZD5mUmHzA/eBBmcs8977438948kYKCgoKRgKoXqbpEVcbtF4HnBKYoMiGjDiPDK+bbW1XGcATY0oB9Mk5QpEJg3nRiTsYNqk6aDtS6/OcmVf8mTL/+G/CDwD163sZ0HRDxW4RE/Jb7YRjkalz/68h3AnvTjkLNiEwOZQS0pROvUr0VqXrLCJySIcByeSuBmtMLhcBpE3g9V6cJUPWO8THVe6DnHTCBL2RIEHhpfOzvPbBSWWem0G+KrM7VaQcosoaqi7GHOoMglDQQ+NjsRKm0RQYMy+Vtpojv0wsAD83wHcvFZQIEjpv899MLqJ43FZiRAUPVyyb/OReBo0bgcS4uE6DqE5P/SHoBz9tkV0MZMAS+NfOn3U40BEQmGvuRlSqsz8VpB6Jcpng/nb9NqLrQFPL9w04iLnl9/5Ap3IK7EDBrKnE2U5cJEDhj8s6KK/S8E0Zo3lkobV7Vu2b+n3QX8v3tZijfZeoyAaq+NVN3p7hCkRJV/zSX8zAMnMV6z1k2W/UliqA/QeC1Gc6DmTntQrRpM9P2jfQLVa+YafQs740dgQemA9f6FyyVNredXDyl6u5ot5iJ4xgCG6h62+Sp0/d3SBYQmM7w8/ArVXc1tVUvxNfqbf9zf312WZWnzQPdbyeuxrprO9yvR1+BuUzVeH90g6ofEg/EehwBLhfmUXxvMf69R8YNBkFIkVXD9jFecHmRmyHwhcDn6DA4upZXXOY0EjucaNMxLnMaFezwgOYVlznx8Lcb+ZRXXOZ0mQqX8orLnPhhrDYqmv4hrqaNKygoKJCR4R+x7jjE9tvvCQAAAABJRU5ErkJggg==" style="height: 37px; filter: drop-shadow(1px 1px 5px rgb(250, 3, 3));">
+			</a>
+	</header>
+		
+		 
+		
+		
+	<footer>
+		<p>&copy; 2024 Game Mania</p>
+	
+	</footer>
+</body 
